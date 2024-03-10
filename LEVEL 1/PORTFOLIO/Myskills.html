@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <a class="navi" href="main.html">Home</a>
+        <a class="navi" href="Myskills.html">My skills</a>
+        <a class="navi" href="Contactme.html">Contact me</a>
+    </div>
+    <div class="header">
+        <p>My Skills.....</p>
+    </div>
+    <h2 style="color: white;">Programming Language Proficiency</h2>
+
+    <div class="progress-container">
+        <div class="progress-bar python" id="python-bar">
+            <div>Python (0%)</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="progress-bar cpp" id="cpp-bar">
+            <div>C++ (0%)</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="progress-bar java" id="java-bar">
+            <div>Java (0%)</div>
+        </div>
+    </div>
+
+    <script>
+        function simulateProgress(language, progressBarId) {
+            var progressBar = document.getElementById(progressBarId);
+            var progress = 0;
+            function updateProgress() {
+                progress += 1;
+                progressBar.style.width = progress + '%';
+                progressBar.querySelector('div').innerText = language + ' (' + progress + '%)';
+                if (progress < 100) {
+                    setTimeout(updateProgress, 50);
+                }
+            }
+
+            updateProgress();
+        }
+        simulateProgress('Python', 'python-bar');
+        simulateProgress('C++', 'cpp-bar');
+        simulateProgress('Java', 'java-bar');
+    </script>
+</body>
+</html>

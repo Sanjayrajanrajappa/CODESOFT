@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(135, 135, 135);
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    color: white;
+}
+.navi{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navi:hover{
+    color: black;
+    background-color: rgb(145, 249, 249);
+}
+.header{
+    color: white;
+    font-size: 50px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 6px 4px 3px black;
+}
+.bio{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+}
+.myself{
+    width: 300px;
+    justify-content: center;
+    align-self: center;
+    box-shadow: 5px 7px 45px black;
+}
+.info{
+    padding: 30px;
+}
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contacts a {
+    margin: 10px;
+}
+
+.gm, .wp, .in, .ins, .x, .gi {
+    padding: 50px;
+    width: 100px;
+}
+.language-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    width: 100px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.progress-bar div {
+    height: 25px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+}
+
+.python {
+    width: 70%;
+}
+
+.cpp {
+    width: 50%;
+}
+
+.java {
+    width: 20%;
+}
